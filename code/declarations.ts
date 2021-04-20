@@ -34,3 +34,21 @@ function getProfile({ name, age }: IUser) {
 }
 
 getProfile({ name: "anna", age: 40 });
+
+// function + unique params + return type
+
+interface IAddress {
+  doorNumber: string | number;
+  street: string;
+  city: string;
+  state: string;
+  pincode: string | number;
+}
+
+function sayHello(
+  name: string,
+  mobileNumber: number,
+  address: IAddress
+): string {
+  return `Hi, ${name}, Welcome!`;
+}
