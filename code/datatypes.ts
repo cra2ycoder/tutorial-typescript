@@ -72,3 +72,15 @@ const student: IProfile = {
     return `${student.firstName} ${student.lastName}`;
   }
 };
+
+/**
+ * @name SuperDataType
+ * @description any
+ */
+
+const data: any = [];
+let response: any = {};
+
+response = {};
+response = "";
+response = ["a", "b", "c"];
