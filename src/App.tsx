@@ -19,6 +19,15 @@ export default function App() {
       <a href="https://www.typescriptlang.org/">
         https://www.typescriptlang.org/
       </a>
+      <p>What is Typescript?</p>
+      <p>
+        TypeScript is a strongly typed, object oriented, compiled language.It
+        was designed by Anders Hejlsberg (designer of C#) at Microsoft.
+        TypeScript is both a language and a set of tools. TypeScript is a typed
+        superset of JavaScript compiled to JavaScript. In other words,
+        TypeScript is JavaScript plus some additional features.
+      </p>
+      <hr />
       <ul>
         {topics.map((topic: string, index: number) => (
           <li key={`topic-${index}`}>{topic}</li>
