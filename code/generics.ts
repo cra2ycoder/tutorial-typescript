@@ -44,3 +44,30 @@ const myNewStory: Story<IStoryInfo> = {
     publisher: ""
   }
 };
+
+// class
+interface IBook {
+  name: string;
+  description: string;
+  publishedOn?: string;
+  publisher?: string;
+}
+
+class Book<T> {
+  private info: T;
+  constructor(data: T) {
+    this.info = data;
+  }
+
+  public getBookInfo(): T {
+    return this.info;
+  }
+}
+
+const myBook = new Book<IBook>({
+  name: "book",
+  description: "book description"
+});
+
+const bookInfo = myBook.getBookInfo();
+console.log(bookInfo.name);
