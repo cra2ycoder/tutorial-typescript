@@ -16,7 +16,10 @@ const booleanData = simpleGeneric<boolean>(true);
 
 const stringArrData = simpleGeneric<string[]>([]);
 
-// for interfaces
+/**
+ * @description
+ * INTERFACES
+ */
 interface Story<T> {
   name: string;
   description: string;
@@ -45,7 +48,10 @@ const myNewStory: Story<IStoryInfo> = {
   }
 };
 
-// class
+/**
+ * @description
+ * CLASSES
+ */
 interface IBook {
   name: string;
   description: string;
