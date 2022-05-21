@@ -21,3 +21,18 @@ const s2 = new Student('michael', 13, 'B')
 const studentArr: Student[] = [s1, s2]
 
 console.log({ s1, s2, studentArr })
+
+/**
+ * adding inside the constructor
+ */
+class StudentWithAccessModifiers {
+  constructor(
+    readonly name: string,
+    private age: number,
+    public section: string
+  ) {}
+
+  format() {
+    return `${this.name} ${this.age} ${this.section}`
+  }
+}
