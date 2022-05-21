@@ -77,3 +77,35 @@ const myBook = new Book<IBook>({
 
 const bookInfo = myBook.getBookInfo()
 console.log(bookInfo.name)
+
+const addUID = <T>(data: T) => {
+  const newUID = Math.random() * 100
+  return { ...data, newUID }
+}
+
+addUID({
+  name: 's',
+  age: 1,
+})
+
+addUID('key')
+addUID(false)
+
+// only object is possible
+const addUIDType1 = <T extends object>(data: T) => {
+  const newUID = Math.random() * 100
+  return { ...data, newUID }
+}
+
+addUIDType1({ name: 's' })
+
+// name prop is mandatory and it should be object
+const addUIDType2 = <T extends { name: string }>(data: T) => {
+  const newUID = Math.random() * 100
+  return { ...data, newUID }
+}
+
+addUIDType2({ name: 's' })
+
+// throws error
+addUIDType2({ age: 2 })
