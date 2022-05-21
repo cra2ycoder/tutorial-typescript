@@ -46,8 +46,8 @@
     "jest.config.js": true,
     ".scannerwork": true,
     "coverage": true,
-    "sonarqube.config.js": true,
-    "tsconfig.json": true
+    "sonarqube.config.js": true
+    // "tsconfig.json": true
   },
 
   "search.exclude": {
