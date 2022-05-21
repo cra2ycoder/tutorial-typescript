@@ -1,16 +1,16 @@
-import "./styles.css";
+import './styles.css'
 
 const topics = [
-  "Data Types",
-  "Declarations",
-  "Interfaces",
-  "Type Aliases",
-  "Classes",
-  "Inheritance",
-  "Generics",
-  "Modules",
-  "Type Extraction"
-];
+  'Data Types',
+  'Declarations',
+  'Interfaces',
+  'Type Aliases',
+  'Classes',
+  'Inheritance',
+  'Generics',
+  'Modules',
+  'Type Extraction',
+]
 
 export default function App() {
   return (
@@ -19,7 +19,7 @@ export default function App() {
       <a href="https://www.typescriptlang.org/">
         https://www.typescriptlang.org/
       </a>
-      <p>What is Typescript?</p>
+      <h2>What is Typescript?</h2>
       <p>
         TypeScript is a strongly typed, object oriented, compiled language.It
         was designed by Anders Hejlsberg (designer of C#) at Microsoft.
@@ -34,5 +34,5 @@ export default function App() {
         ))}
       </ul>
     </div>
-  );
+  )
 }
