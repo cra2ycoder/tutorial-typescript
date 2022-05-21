@@ -37,3 +37,11 @@ tsc fileName.ts -w
 ```
 
 ---
+
+### How to create a tsconfig.json file?
+
+```s
+tsc --init
+```
+
+---
