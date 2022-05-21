@@ -20,3 +20,20 @@ Link: https://www.typescriptlang.org/
 - Generics
 - Modules
 - Type Extraction
+
+---
+
+### How to compile the file?
+
+```s
+// below command will generate the js file
+tsc fileName.ts
+
+// now we can run the code
+node fileName.js
+
+// for watching
+tsc fileName.ts -w
+```
+
+---
