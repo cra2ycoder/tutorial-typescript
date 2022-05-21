@@ -8,7 +8,7 @@
  *  - array functions/properties can be accessible
  */
 
-const person: [string, number] = ["Joe", 20];
+const person: [string, number] = ['Joe', 20]
 
 /**
  * @description
@@ -19,16 +19,16 @@ const person: [string, number] = ["Joe", 20];
 enum Colors {
   Red,
   Green,
-  Blue
+  Blue,
 }
 
 enum SIGNAL_STATE {
-  RED = "red",
-  YELLOW = "yellow",
-  GREEN = "green"
+  RED = 'red',
+  YELLOW = 'yellow',
+  GREEN = 'green',
 }
 
-const currentSignal = "green";
+const currentSignal = 'green'
 
 if (currentSignal === SIGNAL_STATE.GREEN) {
   // open traffic
